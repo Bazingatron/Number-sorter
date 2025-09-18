@@ -1,0 +1,66 @@
+        INP
+        STA a
+        INP 
+        STA b
+        INP 
+        STA c
+        LDA a
+        SUB b
+        BRP 19
+        LDA b
+        SUB c
+        BRP 46
+        LDA c
+        OUT
+        LDA b
+        OUT
+        LDA a
+        OUT
+        HLT
+        LDA a
+        SUB c
+        BRP 29
+        LDA c
+        OUT
+        LDA a
+        OUT
+        LDA b
+        OUT
+        HLT
+        LDA b
+        SUB c
+        BRP 39
+        LDA a
+        OUT
+        LDA c
+        OUT
+        LDA b
+        OUT
+        HLT
+        LDA a
+        OUT
+        LDA b
+        OUT
+        LDA c
+        OUT
+        HLT
+        LDA c
+        SUB a
+        BRP 56
+        LDA b
+        OUT
+        LDA a
+        OUT
+        LDA c
+        OUT
+        HLT
+        LDA b
+        OUT
+        LDA c
+        OUT
+        LDA a
+        OUT
+        HLT
+a       DAT
+b       DAT
+c       DAT
